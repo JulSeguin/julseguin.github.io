@@ -30,10 +30,11 @@ h1{
 }
 
 #profil{
-    position: relative;
-    top: 15px;
     width: 250px;
     height: auto;
+    position: relative;
+    top: 15px;
+    border-radius: 50%;
 }
 
 #profil:hover{
@@ -57,6 +58,7 @@ nav{
     height: 4em;
     width: 100%;
     color: rgb(200, 200, 200);
+    z-index: 1;
 }
 
 #myName{
@@ -150,48 +152,6 @@ p{
     .smallScreen{
         display: block;
     }
-
-    .imgCon{
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .imgProfil{
-        width: 250px;
-        height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 10px solid rgb(86, 82, 84);
-        border-radius: 50%;
-        overflow: hidden;
-    }
-
-.img{
-    width: 300px;
-    height: 300px;
-    margin: 1em;
-    border: 10px solid rgb(86, 82, 84);
-    border-radius: 10%;
-    background-color: rgb(86, 82, 84);
-    overflow: hidden;
-    display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-.img:hover{
-   border-radius: 5%;
-   transition: 300ms ease;
-}
 
 #profil{
     position: relative;
