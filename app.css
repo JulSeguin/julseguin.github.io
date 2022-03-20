@@ -155,23 +155,30 @@ p{
         display: block;
     }
 
-#profil{
-    position: relative;
-    top: 15px;
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        margin: 1em;
+        border: 10px solid rgb(86, 82, 84);
+        border-radius: 10%;
+        background-color: rgb(86, 82, 84);
+        overflow: hidden;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .img:hover{
+       border-radius: 5%;
+       transition: 300ms ease;
+    }
 }
 
-#profil:hover{
-    width: 400px;
-    height: auto;
-    transition: 700ms ease;
-    top: 15px;
-    border-radius: 50%;
-}
-
-}
 
 @media only screen and (min-width: 765px){
     /* Image */
