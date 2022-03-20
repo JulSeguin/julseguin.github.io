@@ -151,6 +151,25 @@ p{
         display: block;
     }
 
+    .imgCon{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .imgProfil{
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 10px solid rgb(86, 82, 84);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
 .img{
     width: 300px;
     height: 300px;
@@ -173,6 +192,21 @@ img{
    border-radius: 5%;
    transition: 300ms ease;
 }
+
+#profil{
+    position: relative;
+    top: 15px;
+    width: 250px;
+    height: auto;
+}
+
+#profil:hover{
+    width: 400px;
+    height: auto;
+    transition: 700ms ease;
+    top: 15px;
+}
+
 }
 
 @media only screen and (min-width: 765px){
