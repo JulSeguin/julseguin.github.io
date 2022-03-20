@@ -198,6 +198,7 @@ img{
     top: 15px;
     width: 250px;
     height: auto;
+    border-radius: 50%;
 }
 
 #profil:hover{
@@ -205,6 +206,7 @@ img{
     height: auto;
     transition: 700ms ease;
     top: 15px;
+    border-radius: 50%;
 }
 
 }
