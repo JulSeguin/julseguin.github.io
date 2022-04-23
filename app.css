@@ -4,13 +4,25 @@ body{
     font-family: 'Fredoka', sans-serif;
     height: 100vh;
     display: grid;
-  grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 h1{
     padding-top: 1em;
     text-align: center;
     font-size: 4em;
+}
+
+#instagramEscape{
+    color: black;
+    text-decoration: underline;
+    transition: 1000ms ease;
+}
+
+#instagramEscape:hover{
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    transition: 1000ms ease;
 }
 
 .imgCon{
@@ -29,6 +41,7 @@ h1{
     justify-content: center;
     border: 10px solid rgb(86, 82, 84);
     border-radius: 50%;
+    box-shadow: 0 0 10px rgb(86 82 84 / 50%);
     overflow: hidden;
 }
 
@@ -140,12 +153,9 @@ p{
     padding-bottom: 0.3em;
 }
 
-@media only screen and (max-width: 765px){
+@media only screen and (max-width: 780px){
 
     #myName{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 1.5em;
         margin-left: 10px;
     }
@@ -155,106 +165,65 @@ p{
     #boxAllImage{
         display: block
     }
-    
-    .colonneA{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .colonneB{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .smallScreen{
         display: block;
     }
 
     .img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 300px;
         height: 300px;
         margin: 1em;
-        border: 10px solid rgb(86, 82, 84);
-        border-radius: 10%;
-        background-color: rgb(86, 82, 84);
-        overflow: hidden;
-    }
-    
-    img{
-        width: 100%;
-        height: auto;
-    }
-    
-    .img:hover{
-       border-radius: 5%;
-       transition: 300ms ease;
     }
 }
 
 
-@media only screen and (min-width: 765px){
+@media only screen and (min-width: 780px){
+
     /* Image */
-#boxAllImage{
-    display: grid;
-    grid-template-columns: 12fr;
-    grid-row: 2;
-}
+    #boxAllImage{
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-row: 2;
+    }
 
-.colonneA{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .smallScreen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.colonneB{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.smallScreen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin: 1em;
-    border: 10px solid rgb(86, 82, 84);
-    border-radius: 10%;
-    background-color: rgb(86, 82, 84);
-    overflow: hidden;
-}
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-.img:hover{
-   border-radius: 5%;
-   transition: 300ms ease;
-}
+    .img{
+        width: 200px;
+        height: 200px;
+        margin: 1em;
+    }
 }
 
 
 @media only screen and (min-width: 1050px){
+    
     /* Image */
-#boxAllImage{
-    display: grid;
-    grid-template-columns: 12fr;
-    grid-row: 2;
+    #boxAllImage{
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-row: 2;
+    }
+
+    .smallScreen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img{
+        width: 300px;
+        height: 300px;
+        margin: 1em;
+    }
 }
+
+/* Image All screen size */
 
 .colonneA{
     display: flex;
@@ -268,32 +237,136 @@ img{
     justify-content: center;
 }
 
-.smallScreen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+img{
+    width: 100%;
+    height: auto;
 }
 
 .img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
-    margin: 1em;
-    border: 10px solid rgb(86, 82, 84);
-    border-radius: 10%;
-    background-color: rgb(86, 82, 84);
     overflow: hidden;
+    border-radius: 10%;
+    transition: 400ms ease;
+    border: 10px solid rgb(86, 82, 84);
+    background-color: rgb(86, 82, 84);
 }
-
-img{
-    width: 100%;
-    height: auto;
-}
-
+ 
 .img:hover{
-   border-radius: 5%;
-   transition: 300ms ease;
+    border-radius: 5%;
+    transition: 400ms ease;
 }
+
+/* Image individuelle */
+
+#imgA{
+    background-image: url("images/chambre.PNG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgA:hover {
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+#imgB{
+    background-image: url("images/chaletHiver.PNG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgB:hover {
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+#imgC{
+    background-image: url("images/cuisine.PNG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgC:hover {
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+#imgD{
+    background-image: url("images/kidnap.PNG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgD:hover {
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+#imgE{
+    background-image: url("images/diamondRoad1.PNG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgE:hover {
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+#imgF{
+    background-image: url("images/diamondRoad2.PNG");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgF:hover {
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+.hiddenText{
+    display: none;
+    text-align: center;
+}
+
+.img:hover .hiddenText{
+    display: block;
+}
+
+/* CSS for the blog.html page */
+
+.secondaryNav{
+    width: 100%;
+    height: 2em;
+    background-color: rgb(105, 100, 102);
+}
+
+#account{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#create{
+    margin-right: 10px;
+}
+
+#signIn{
+    margin-right: 10px;
 }
