@@ -13,16 +13,9 @@ h1{
     font-size: 4em;
 }
 
-#instagramEscape{
-    color: black;
-    text-decoration: underline;
-    transition: 1000ms ease;
-}
-
-#instagramEscape:hover{
-    color: rgb(50, 50, 50);
-    text-decoration: none;
-    transition: 1000ms ease;
+h2{
+    text-align: center;
+    font-size: 2em;
 }
 
 .imgCon{
@@ -122,6 +115,18 @@ nav{
 a{
     color: rgb(200, 200, 200);
     text-decoration: none;
+}
+
+#instagramEscape{
+    color: black;
+    text-decoration: underline;
+    transition: 1000ms ease;
+}
+
+#instagramEscape:hover{
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    transition: 1000ms ease;
 }
 
 p{
@@ -259,85 +264,6 @@ img{
 }
 
 /* Image individuelle */
-
-#imgA{
-    background-image: url("images/chambre.PNG");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#imgA:hover {
-    background-color: rgba(86, 82, 84, 0.75);
-    background-image: url();
-    transition: 1500ms ease;
-}
-
-#imgB{
-    background-image: url("images/chaletHiver.PNG");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#imgB:hover {
-    background-color: rgba(86, 82, 84, 0.75);
-    background-image: url();
-    transition: 1500ms ease;
-}
-
-#imgC{
-    background-image: url("images/cuisine.PNG");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#imgC:hover {
-    background-color: rgba(86, 82, 84, 0.75);
-    background-image: url();
-    transition: 1500ms ease;
-}
-
-#imgD{
-    background-image: url("images/kidnap.PNG");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#imgD:hover {
-    background-color: rgba(86, 82, 84, 0.75);
-    background-image: url();
-    transition: 1500ms ease;
-}
-
-#imgE{
-    background-image: url("images/diamondRoad1.PNG");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#imgE:hover {
-    background-color: rgba(86, 82, 84, 0.75);
-    background-image: url();
-    transition: 1500ms ease;
-}
-
-#imgF{
-    background-image: url("images/diamondRoad2.PNG");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#imgF:hover {
-    background-color: rgba(86, 82, 84, 0.75);
-    background-image: url();
-    transition: 1500ms ease;
-}
-
 .hiddenText{
     display: none;
     text-align: center;
@@ -345,6 +271,48 @@ img{
 
 .img:hover .hiddenText{
     display: block;
+    height: 100%;
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+.img:active .hiddenText{
+    display: block;
+    height: 100%;
+    background-color: rgba(86, 82, 84, 0.75);
+    background-image: url();
+    transition: 1500ms ease;
+}
+
+.img{
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#imgA{
+    background-image: url("images/chambre.PNG");
+}
+
+#imgB{
+    background-image: url("images/chaletHiver.PNG");
+}
+
+#imgC{
+    background-image: url("images/cuisine.PNG");
+}
+
+#imgD{
+    background-image: url("images/kidnap.PNG");
+}
+
+#imgE{
+    background-image: url("images/diamondRoad1.PNG");
+}
+
+#imgF{
+    background-image: url("images/diamondRoad2.PNG");
 }
 
 /* CSS for the blog.html page */
@@ -369,4 +337,62 @@ img{
 
 #signIn{
     margin-right: 10px;
+}
+
+/* form css */
+
+label{
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+input{
+    font-size: 1.2em;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form{
+    border: 2px solid black;
+    align-content: center;
+    margin: 5em 10em;
+    background-color: rgba(86, 82, 84, 0.75);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(86, 82, 84);
+}
+
+.insideForm{
+    height: 12em;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+
+.formInformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    font-size: 1em;
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(190, 190, 190);
+    transition: 750ms ease;
+}
+
+#submit:hover{
+    font-size: 1.5em;
+    padding: 5px 10px;
+    background-color: #fff;
+    transition: 750ms ease;
+}
+
+#logIn{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
