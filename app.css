@@ -5,6 +5,8 @@ body{
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: #fff;
+    transition: background-color 500ms;
 }
 
 h1{
@@ -315,12 +317,12 @@ img{
     background-image: url("images/diamondRoad2.PNG");
 }
 
-/* CSS for the blog.html page */
+/* CSS secondary Nav */
 
 .secondaryNav{
     width: 100%;
     height: 2em;
-    background-color: rgb(105, 100, 102);
+    background-color: rgb(100, 100, 100);
 }
 
 #account{
@@ -329,6 +331,35 @@ img{
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+#lightSwitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#borderLight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(200, 200, 200);
+}
+
+#borderLight:hover{
+    cursor: pointer;
+}
+
+#light{
+    margin-top: 5px;
+    padding: 0px;
+    font-size: 0.75em;
 }
 
 #create{

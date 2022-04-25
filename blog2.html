@@ -14,7 +14,6 @@
         <title>Julien Seguin</title>
     </head>
 <body>
-
     <header>
         <nav>
             <div id="myName">
@@ -23,7 +22,7 @@
                 </span>
             </div>
             <div id="blog">
-               <span>Blog</span> 
+                <a class="social" href="blog.html">Blog</a>
             </div>
             <div class="reseauSocial">
                 <div id="facebook">
@@ -37,34 +36,32 @@
                 </div>
             </div>
         </nav>
-        <div class="secondaryNav">
-            <div id="account">
-                <div class="social" id="signIn">
-                    <a class="social" href="signin.html">Sign In</a>
-                </div>
-                <div class="social" id="create">
-                    <a class="social" href="create.html">Create an account</a>
-                </div>
-            </div>
-        </div>
     </header>
 
     <main>
-        <ul>
-            <li>
-                <a href="blog1.html">Blog 1 : Présentation</a>
-            </li>
-            <li>
-                <a href="blog2.html">Blog 2 : Ajout d'un effet clair/sombre</a>
-            </li>
-        </ul>
+        <h1>Ajout d'un effet clair/sombre</h1>
+        <p>Bonjour, vous avez peut-être remarqué que j'ai ajouté un bouton en dessous de ma barre de navigation qui permet de changer le fond d'écran de couleur passant de clair à sombre.</p>
+        <p>Je pratique mon javascript, surtout réussir à maitriser les différentes façon de modifier les éléments d'une page</p>
+        <p>Voici ma fonctionnalité sur cette page en plus!
+            <div>
+                <div id="lightSwitch">
+                    <div id="borderLight">
+                        <img id="light" src="images/lightOn.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </p>
+        <p>Merci de m'avoir lu</p>
+        <p>Julien Séguin</p>
+        <p>25/04/2022</p>
     </main>
-    
+
     <footer>
         <div class="container">
             <span class="copyright">&copy;Julien Séguin 2022</span>
         </div>
     </footer>
-
+    
+    <script src="app.js"></script>
 </body>
 </html>
